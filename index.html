@@ -10,20 +10,20 @@
 <body>
     <header></header>
     <main>
-        <form action="action.html" class="shekveta">
+        <form action="action.html" class="shekveta" method="post" autocomplete="off">
             <h3>შეუკვეთე პროდუქტი დღესვე</h3>
-            <input type="text" name="firstName" id="firstName"
+            <input type="text" name="firstName" id="firstName" required
             placeholder="სახელი">
-            <input type="text" name="lasttName" id="lasttName"
+            <input type="text" name="lasttName" id="lasttName" required
             placeholder="გვარი">
-            <input type="text" name="number" id="number" class="botoma"
+            <input type="text" name="number" id="number" class="botoma" required
             placeholder="ტელეფონის ნომერი">
             <p>გთხოვთ მიუთითოთ ზუსტი მისამართი</p>
-            <textarea name="misamarti" id="misamarti" cols="30" rows="10" placeholder="მაგ: გლდანი,4ე მიკრო 96ა კორპუსი,9ე სართული ბინია:58"></textarea>
+            <textarea name="misamarti" id="misamarti" cols="30" rows="10" required placeholder="მაგ: გლდანი,4ე მიკრო 96ა კორპუსი,9ე სართული ბინია:58"></textarea>
             <p>აირჩიეთ გადახდის მეთოდი</p>
-            <input type="radio" name="pay" id="bycard" class="radio1">
+            <input type="radio" name="pay" id="bycard" class="radio1" required>
             <label for="bycard" class="gadaxda1">ბარათით გადახდა</label>
-            <input type="radio" name="pay" id="cash"  class="radio2">
+            <input type="radio" name="pay" id="cash"  class="radio2" >
             <label for="cash" class="gadaxda2">ქეშით გადახდა</label>
             <input type="submit" name="gagazavna" id="gagazavna"
             value="შეკვეთის გაფორმება">

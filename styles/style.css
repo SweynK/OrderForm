@@ -15,7 +15,8 @@ body{
 .shekveta{
     width: 750px;
     margin-left: 500px;
-    margin-top: 50px;
+    padding-top: 50px;
+    /* margin: 0 auto; */
     
 }
 .shekveta input, .shekveta textarea{
@@ -25,11 +26,11 @@ body{
     outline: none;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    border: none;
     
 }
 p{
     font-size: 14px;
-    padding: 5px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #ffffff;
@@ -42,7 +43,11 @@ p{
     background-color: #01AF8C;
     font-size: 20px;
     cursor: pointer;
-    
+    border: #000000 solid 2px; 
+    transition: 1s; 
+}
+.shekveta input[type="submit"]:hover{
+    background-color: #046652;
 }
 
 .shekveta h3{
@@ -130,6 +135,68 @@ button a{
     font-size: 60px;
     padding-top: 100px;
    
+}
+@media only screen and (max-width:1366px){
+    .shekveta{
+      width: 750px; 
+      padding-top: 50px;
+      margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .shekveta{
+        width: 400px;
+        padding-top: 50px;
+        margin: 0 auto;
+
+    }
+    .shekveta input, .shekveta textarea{
+        width: 100%;
+    }
+    .shekveta h3{
+        font-size: 20px;
+        padding: 20px 60px;
+        height: 80px;
+        
+    }
+    .radio1, .radio2{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+    }
+    .gadaxda1, .gadaxda2{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:414px){
+    .shekveta{
+        width: 300px;
+        padding-top: 50px;
+        margin: 0 auto;
+
+    }
+    .shekveta h3{
+        font-size: 16px;
+        padding: 10px 20px;
+        height: 50px;
+        
+    }
+    p{
+        font-size: 10px;   
+    }
+    .shekveta input, .shekveta textarea{
+        margin-bottom: 10px;
+    }
+    .radio1, .radio2{
+        width: 15px;
+        height: 15px;
+        margin-left: 20px;
+    }
+    .gadaxda1, .gadaxda2{
+        font-size: 12px;
+    }
 }
 
 
